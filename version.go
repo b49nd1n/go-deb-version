@@ -193,6 +193,11 @@ func (v1 *Version) Revision() string {
 	return v1.debianRevision
 }
 
+func (v1 *Version) IsEmpty() string {
+	return v1==nill || (v1.upstreamVersion=="" && v1.debianRevision=="");
+}
+
+
 func compare(v1, v2 string) int {
 	// Equal
 	if v1 == v2 {
