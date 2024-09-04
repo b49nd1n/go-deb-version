@@ -194,7 +194,7 @@ func (v1 *Version) Revision() string {
 }
 
 func (v1 *Version) IsEmpty() string {
-	return v1==nill || (v1.upstreamVersion=="" && v1.debianRevision=="");
+	return v1==nil || (v1.upstreamVersion=="" && v1.debianRevision=="");
 }
 
 
